@@ -1,0 +1,75 @@
+
+<form >
+  <h2>Rectangle Creator</h2>
+  <p>Brand Name: <input class="input" id="name" type="text" value="LOGO" ></p>
+  <p>Describe your Brand: <input class="input" id="desc" type="text" value="SMAPLE LANDING PAGE"></p>
+  <p>Primary Color: <input id="pcolor" type="color"  ></p>
+  <p class="hide">Secondary Color: <input id="scolor" type="color" ></p>
+</form>
+<button id="create">Create</button>
+<button id="cancel">Cancel</button>
+
+
+
+
+
+<script>
+
+document.getElementById('create').onclick = () => {
+  // Get values from the form fields
+  const brandName = document.getElementById("name").value;
+    const brandDescription = document.getElementById("desc").value;
+    const primaryColor = document.getElementById("pcolor").value;
+    // const primaryColor = "#7B61FF"
+    const secondaryColor = document.getElementById("scolor").value;
+
+    // Create an object to store the form values
+    const formData = {
+      brandName: brandName,
+      brandDescription: brandDescription,
+      primaryColor: primaryColor,
+      secondaryColor: secondaryColor,
+    };
+
+    // You can now use the "formData" object to do further processing or send it to an API, etc.
+
+  parent.postMessage({ pluginMessage: { type: 'create', formData } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+</script>
+
+
+<style>
+  .hide{
+    display: none;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .input{
+    width: 80%;
+    border: 1px solid grey;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 4px ;
+    display: block;
+  }
+  button{
+    color:white;
+    background-color: #1677ff;
+    font-size: 14px;
+    height: 32px;
+    padding: 4px 15px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin: 5px;
+  }
+</style>

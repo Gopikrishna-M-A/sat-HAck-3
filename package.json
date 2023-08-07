@@ -1,0 +1,19 @@
+{
+  "name": "first-plugin",
+  "version": "1.0.0",
+  "description": "Your Figma Plugin",
+  "main": "code.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "npm run build -- --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@create-figma-plugin/utilities": "^2.5.1",
+    "@figma/plugin-typings": "*",
+    "@types/figma": "^1.0.4",
+    "typescript": "^5.1.6"
+  },
+  "keywords": []
+}
