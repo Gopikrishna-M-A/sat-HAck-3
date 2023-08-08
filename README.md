@@ -1,8 +1,23 @@
+![Plasmo Notion](https://github.com/TH-Activities/saturday-hack-night-template/assets/64391274/85d3fbb8-aed6-4751-b051-4539df392f1a)
+
+
+# Brand Components Generator
+This project generates components based on the primary and secondary colors along with a landing page.
+## Team members
+1. [Gopikrishna M A](https://github.com/Gopikrishna-M-A)
+2. [Ashwin Sivasankaran](https://github.com/ashwinsk24)
+3. [Jyothish T R](https://github.com/Mr3lueSky)
+
+## Libraries used
+- Typescript
+- NPM
+
+## How to Run
+Instructions for running
 Below are the steps to get your plugin running. You can also find instructions at:
+ https://www.figma.com/plugin-docs/plugin-quickstart-guide/
 
-  https://www.figma.com/plugin-docs/plugin-quickstart-guide/
-
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
+This plugin template uses Typescript and NPM, two standard tools for creating JavaScript applications.
 
 First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
 libraries. You can find the download link here:
